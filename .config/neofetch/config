@@ -8,17 +8,18 @@
 # https://github.com/dylanaraps/neofetch/wiki/Customizing-Info
 print_info() {
     info title
+  info line_break   
     info underline
-
+    info line_break    
     info "OS" distro
     info "Model" model
-    #info "Kernel" kernel
-#    info "Uptime" uptime
+    info "Kernel" kernel
+    info "Uptime" uptime
 #    info "Packages" packages
     info "Shell" shell
     info "Resolution" resolution
     info "DE" de
-    #info "WM" wm
+    info "WM" wm
     #info "WM Theme" wm_theme
     #info "Theme" theme
     #info "Icons" icons
@@ -29,8 +30,8 @@ print_info() {
     info "Memory" memory
     # info "CPU Usage" cpu_usage
      info "Disk" disk
-    # info "Battery" battery
-    # info "Font" font
+    #info "Battery" battery
+     info "Font" font
     # info "Song" song
     # info "Local IP" local_ip
     # info "Public IP" public_ip
@@ -40,7 +41,6 @@ print_info() {
 
     info line_break
     info cols
-    info line_break
 }
 
 
@@ -544,7 +544,7 @@ disk_display="off"
 # Default:  'ascii'
 # Values:   'ascii', 'caca', 'catimg', 'jp2a', 'iterm2', 'off', 'tycat', 'w3m'
 # Flag:     --backend
-image_backend="w3m"
+image_backend="ascii"
 
 # Image Source
 #
@@ -595,7 +595,7 @@ ascii_colors=(distro)
 # Default: 'on'
 # Values:  'on', 'off'
 # Flag:    --ascii_bold
-ascii_bold="on"
+ascii_bold="off"
 
 
 # Image Options
