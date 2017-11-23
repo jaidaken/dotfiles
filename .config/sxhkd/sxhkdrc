@@ -33,7 +33,7 @@ super + alt + Escape
 	bspc quit
 
 # close and kill
-super + {_,shift + }w
+super + {_,shift + }q
 	bspc node -{c,k}
 
 # alternate between the tiled and monocle layout
@@ -162,39 +162,23 @@ super + shift + o
  	/home/gamehelp16/Documents/lock.sh
 
 # VOLUME
-
-### Mute
-XF86AudioMute
-	amixer set Master toggle
-	/home/gamehelp16/Documents/dzvol -bg '#222222' -fg '#FFFFFF' -fn 'Noto Sans 11' -d 1 -y 650
-
-### Master Volume
+# Raises volume
 XF86AudioRaiseVolume
-	amixer set Master 2.5%+,5%+; \
-	/home/gamehelp16/Documents/dzvol -bg '#222222' -fg '#FFFFFF' -fn 'Noto Sans 11' -d 1 -y 650
+    pactl set-sink-volume 0 +5%
 
-super + XF86AudioRaiseVolume
-	amixer set Master 0.5%+,1%+; \
-	/home/gamehelp16/Documents/dzvol -bg '#222222' -fg '#FFFFFF' -fn 'Noto Sans 11' -d 1 -y 650
-
+# Lowers volume
 XF86AudioLowerVolume
-	amixer set Master 2.5%-,5%-; \
-	/home/gamehelp16/Documents/dzvol -bg '#222222' -fg '#FFFFFF' -fn 'Noto Sans 11' -d 1 -y 650
+    pactl set-sink-volume 0 -5%
 
-super + XF86AudioLowerVolume
-	amixer set Master 0.5%-,1%-; \
-	/home/gamehelp16/Documents/dzvol -bg '#222222' -fg '#FFFFFF' -fn 'Noto Sans 11' -d 1 -y 650
-
-# BRIGHTNESS
+# Mutes
+XF86AudioMute
+#amixer set Master toggle
+    pactl set-sink-mute 0 toggle
 
 # Brightness goes up
-#/home/gamehelp16/Documents/brightness -u
-#XF86MonBrightnessUp
-super + F6
-	/home/gamehelp16/Documents/brightness -u
+XF86MonBrightnessUp
+    xbacklight -inc 20
 
 # Brightness goes down
-# XF86MonBrightnessDown
-super + F5
-	/home/gamehelp16/Documents/brightness -d	
-
+XF86MonBrightnessDown
+    xbacklight -dec 20

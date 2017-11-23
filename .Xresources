@@ -31,8 +31,8 @@ Xcursor.size:  0
 
 ! URxvt SETUP HERE !
 URxvt.internalBorder: 	20
-!URxvt.font: 			xft:DejaVuSansMono Nerd Font:size=9
-URxvt.font: xft:DejaVuSansMono Nerd Font:size=9
+!URxvt.font: 			xft:DejaVuSansMono Nerd Font:size=8
+URxvt.font: xft:DejaVuSansMono Nerd Font:size=8
 URxvt.letterSpace:		0
 URxvt.lineSpace:		0
 URxvt.depth: 			24

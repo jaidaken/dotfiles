@@ -1,6 +1,6 @@
 #! /bin/sh
 sxhkd &
-
+"$HOME"/.config/polybar/launch.sh &
 bspc monitor -d term web chat code music 6 7
 
 bspc config border_width         0
@@ -29,18 +29,11 @@ bspc config focus_follows_pointer true
 bspc config presel_feedback_color \#aaaaaa
 
 xsetroot -cursor_name left_ptr
-#feh --bg-fill "/home/gamehelp16/Pictures/unsplashwall.jpg"
-#feh --bg-fill ~/Pictures/zF1V6EE.jpg
 feh --randomize --bg-fill ~/Pictures/wallpapers
-#gnome-wallpaper-changer &
 mpd&
 compton -f &
 xrdb -merge ~/.Xdefaults &
 redshift &
-#/home/gamehelp16/allfloat.sh &
-#panel &
-#polybar top &
-"$HOME"/.config/polybar/launch.sh &
 termite &
 firefox-nightly &
 discord &
