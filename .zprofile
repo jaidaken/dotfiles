@@ -1,0 +1,1 @@
+/home/jaidaken/.zprezto/runcoms/zprofile

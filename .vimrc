@@ -45,7 +45,7 @@ set runtimepath=~/.vim,$VIM/vimfiles,$VIMRUNTIME
 
 set t_Co=256
 syntax on
-colorscheme rat
+"colorscheme rat
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " => General
